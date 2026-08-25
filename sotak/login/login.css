@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+
+    direction: rtl;
+
+    background-color: #f7f9fb;
+
+    color: #17202a;
+}
+
+
+/* Login Page */
+
+.login-page {
+    min-height: 100vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    padding: 30px;
+}
+
+
+/* Login Box */
+
+.login-box {
+    width: 420px;
+
+    max-width: 100%;
+
+    background-color: white;
+
+    padding: 45px;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.07);
+}
+
+
+/* Logo */
+
+.logo {
+    width: 75px;
+
+    height: 75px;
+
+    border-radius: 50%;
+
+    margin-bottom: 20px;
+}
+
+
+/* Title */
+
+.login-box h1 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+.login-box > p {
+    color: #777;
+
+    margin-bottom: 35px;
+}
+
+
+/* Form */
+
+form {
+    text-align: right;
+}
+
+form label {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: 15px;
+}
+
+
+input {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    margin-bottom: 20px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 7px;
+
+    outline: none;
+
+    font-size: 15px;
+
+    transition: 0.3s;
+}
+
+
+input:focus {
+    border-color: #38bdf8;
+
+    box-shadow: 0 0 0 3px rgba(56, 189, 248, 0.1);
+}
+
+
+/* Button */
+
+button {
+    width: 100%;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 7px;
+
+    background-color: #38bdf8;
+
+    color: white;
+
+    font-size: 16px;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+button:hover {
+    background-color: #0ea5e9;
+
+    transform: translateY(-2px);
+}
+
+
+/* No Account */
+
+.no-account {
+    text-align: center;
+
+    margin-top: 25px;
+
+    font-size: 14px;
+}
+
+.no-account span {
+    color: #777;
+}
+
+.no-account .disabled {
+    color: #38bdf8;
+
+    margin-right: 5px;
+}
+
+
+/* Back */
+
+.back {
+    display: inline-block;
+
+    margin-top: 25px;
+
+    color: #555;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    transition: 0.3s;
+}
+
+.back:hover {
+    color: #38bdf8;
+}
