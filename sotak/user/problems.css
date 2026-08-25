@@ -1,0 +1,923 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    font-family: Arial, sans-serif;
+
+    direction: rtl;
+
+    background-color: #f6f8fa;
+
+    color: #17202a;
+}
+
+
+/* =========================
+   Sidebar
+========================= */
+
+.sidebar {
+    position: fixed;
+
+    right: 0;
+    top: 0;
+
+    width: 270px;
+    height: 100vh;
+
+    background-color: white;
+
+    border-left: 1px solid #eeeeee;
+
+    padding: 30px 20px;
+
+    display: flex;
+
+    flex-direction: column;
+}
+
+
+/* =========================
+   Logo
+========================= */
+
+.sidebar-logo {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0 10px;
+
+    margin-bottom: 45px;
+}
+
+
+.sidebar-logo img {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+
+.sidebar-logo h2 {
+    font-size: 22px;
+}
+
+
+/* =========================
+   Navigation
+========================= */
+
+.sidebar nav {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+
+.nav-item {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 13px 15px;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    color: #555;
+
+    transition: 0.3s;
+}
+
+
+.nav-item:hover {
+    background-color: #f0faff;
+
+    color: #38bdf8;
+
+    transform: translateX(-3px);
+}
+
+
+.nav-item.active {
+    background-color: #eaf8fe;
+
+    color: #0ea5e9;
+
+    font-weight: bold;
+}
+
+
+.icon {
+    width: 25px;
+
+    text-align: center;
+
+    font-size: 20px;
+}
+
+
+/* =========================
+   Account
+========================= */
+
+.account {
+    margin-top: auto;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px;
+
+    border-top: 1px solid #eeeeee;
+}
+
+
+.account-icon {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: #eaf8fe;
+
+    border-radius: 50%;
+}
+
+
+.account-info {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.account-info span {
+    font-size: 12px;
+
+    color: #999;
+}
+
+
+.account-info strong {
+    font-size: 14px;
+}
+
+
+/* =========================
+   Logout
+========================= */
+
+.logout {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 12px 15px;
+
+    margin-top: 10px;
+
+    text-decoration: none;
+
+    color: #777;
+
+    border-radius: 8px;
+
+    transition: 0.3s;
+}
+
+
+.logout:hover {
+    background-color: #fff1f1;
+
+    color: #e74c3c;
+}
+
+
+/* =========================
+   Main
+========================= */
+
+.main {
+    margin-right: 270px;
+
+    padding: 45px 55px;
+}
+
+
+/* =========================
+   Top
+========================= */
+
+.top {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+}
+
+
+.small-title {
+    color: #38bdf8;
+
+    font-size: 13px;
+
+    font-weight: bold;
+
+    margin-bottom: 10px;
+}
+
+
+.top h1 {
+    font-size: 32px;
+
+    margin-bottom: 10px;
+}
+
+
+.top-text {
+    color: #777;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   Profile
+========================= */
+
+.profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+}
+
+
+.profile-icon {
+    width: 45px;
+    height: 45px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background-color: white;
+
+    border-radius: 50%;
+
+    border: 1px solid #eeeeee;
+}
+
+
+.profile div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 4px;
+}
+
+
+.profile span {
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+.profile strong {
+    font-size: 14px;
+}
+
+
+/* =========================
+   Statistics
+========================= */
+
+.statistics {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 18px;
+
+    margin-bottom: 45px;
+}
+
+
+.stat-card {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 22px;
+
+    border: 1px solid #f0f0f0;
+
+    transition: 0.3s;
+}
+
+
+.stat-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.04);
+}
+
+
+.stat-icon {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+
+    background-color: #eaf8fe;
+
+    color: #0ea5e9;
+
+    font-size: 22px;
+
+    font-weight: bold;
+
+    flex-shrink: 0;
+}
+
+
+.stat-icon.yellow {
+    background-color: #fff7e6;
+
+    color: #d99000;
+}
+
+
+.stat-icon.blue {
+    background-color: #eaf8fe;
+
+    color: #0ea5e9;
+}
+
+
+.stat-icon.green {
+    background-color: #eafaf0;
+
+    color: #22a05a;
+}
+
+
+.stat-card div:last-child {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+
+.stat-card span {
+    color: #999;
+
+    font-size: 12px;
+}
+
+
+.stat-card strong {
+    font-size: 25px;
+}
+
+
+/* =========================
+   Reports
+========================= */
+
+.reports {
+    margin-bottom: 55px;
+}
+
+
+.reports-header {
+    display: flex;
+
+    align-items: flex-end;
+
+    justify-content: space-between;
+
+    margin-bottom: 25px;
+}
+
+
+.reports-header h2 {
+    font-size: 30px;
+}
+
+
+/* =========================
+   New Report Button
+========================= */
+
+.new-report {
+    display: inline-block;
+
+    padding: 12px 20px;
+
+    background-color: #38bdf8;
+
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    font-size: 14px;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.new-report:hover {
+    background-color: #0ea5e9;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   Report Card
+========================= */
+
+.report-card {
+    display: flex;
+
+    gap: 22px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    padding: 15px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid #f0f0f0;
+
+    transition: 0.3s;
+}
+
+
+.report-card:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+}
+
+
+/* =========================
+   Report Image
+========================= */
+
+.report-image {
+    width: 190px;
+
+    height: 150px;
+
+    object-fit: cover;
+
+    border-radius: 10px;
+
+    flex-shrink: 0;
+}
+
+
+/* =========================
+   Report Content
+========================= */
+
+.report-content {
+    flex: 1;
+
+    padding: 5px 0;
+}
+
+
+/* =========================
+   Report Top
+========================= */
+
+.report-top {
+    display: flex;
+
+    align-items: flex-start;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    margin-bottom: 12px;
+}
+
+
+.report-number {
+    display: block;
+
+    color: #38bdf8;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 7px;
+}
+
+
+.report-top h3 {
+    font-size: 18px;
+}
+
+
+/* =========================
+   Status
+========================= */
+
+.status {
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    white-space: nowrap;
+}
+
+
+.status.pending {
+    background-color: #fff7e6;
+
+    color: #d99000;
+}
+
+
+.status.progress {
+    background-color: #eaf8fe;
+
+    color: #0ea5e9;
+}
+
+
+.status.solved {
+    background-color: #eafaf0;
+
+    color: #22a05a;
+}
+
+
+/* =========================
+   Description
+========================= */
+
+.description {
+    color: #666;
+
+    font-size: 14px;
+
+    line-height: 1.8;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Report Details
+========================= */
+
+.report-details {
+    display: flex;
+
+    align-items: center;
+
+    gap: 25px;
+
+    color: #888;
+
+    font-size: 12px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Report Bottom
+========================= */
+
+.report-bottom {
+    display: flex;
+
+    align-items: center;
+
+    padding-top: 13px;
+
+    border-top: 1px solid #f1f1f1;
+}
+
+
+/* =========================
+   Messages
+========================= */
+
+.message {
+    display: inline-block;
+
+    padding: 7px 12px;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+/* تم إرسال البلاغ */
+
+.message.sent {
+    background-color: #eaf8fe;
+
+    color: #0ea5e9;
+}
+
+
+/* تم تحويل البلاغ */
+
+.message.forwarded {
+    background-color: #f3e8ff;
+
+    color: #9333ea;
+}
+
+
+/* تم إصلاح المشكلة */
+
+.message.solved-message {
+    background-color: #eafaf0;
+
+    color: #22a05a;
+}
+
+
+/* جاري التعامل */
+
+.message.working {
+    background-color: #fff1e6;
+
+    color: #ea580c;
+}
+
+
+/* البلاغ قيد المراجعة */
+
+.message.reviewing {
+    background-color: #fff7e6;
+
+    color: #d99000;
+}
+
+
+/* =========================
+   Info
+========================= */
+
+.info {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    background-color: #17202a;
+
+    color: white;
+
+    border-radius: 15px;
+
+    padding: 40px 50px;
+}
+
+
+.info h2 {
+    margin-bottom: 12px;
+}
+
+
+.info p {
+    color: #b9c1c8;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+}
+
+
+.info-number {
+    font-size: 45px;
+
+    font-weight: bold;
+
+    color: #38bdf8;
+}
+
+
+/* =========================
+   Responsive
+========================= */
+
+@media (max-width: 1100px) {
+
+    .statistics {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+@media (max-width: 1000px) {
+
+    .sidebar {
+        width: 220px;
+    }
+
+
+    .main {
+        margin-right: 220px;
+
+        padding: 35px 30px;
+    }
+
+
+    .report-image {
+        width: 160px;
+
+        height: 140px;
+    }
+
+}
+
+
+@media (max-width: 700px) {
+
+    .sidebar {
+        position: relative;
+
+        width: 100%;
+
+        height: auto;
+
+        border-left: none;
+
+        border-bottom: 1px solid #eeeeee;
+    }
+
+
+    .sidebar nav {
+        flex-direction: row;
+
+        overflow-x: auto;
+    }
+
+
+    .nav-item {
+        white-space: nowrap;
+    }
+
+
+    .account {
+        margin-top: 20px;
+    }
+
+
+    .main {
+        margin-right: 0;
+
+        padding: 25px 18px;
+    }
+
+
+    .top {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .statistics {
+        grid-template-columns: 1fr;
+    }
+
+
+    .reports-header {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 20px;
+    }
+
+
+    .new-report {
+        width: 100%;
+
+        text-align: center;
+    }
+
+
+    .report-card {
+        flex-direction: column;
+    }
+
+
+    .report-image {
+        width: 100%;
+
+        height: 190px;
+    }
+
+
+    .report-top {
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+
+    .report-details {
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 8px;
+    }
+
+
+    .report-bottom {
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 10px;
+    }
+
+
+    .info {
+        padding: 30px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+    }
+
+}

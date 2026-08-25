@@ -1,0 +1,413 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+
+    <link rel="icon" href="../../logo.jpeg" />
+
+    <title>الإبلاغ عن مشكلة | صوتك</title>
+
+    <link rel="stylesheet" href="report.css" />
+  </head>
+
+  <body>
+
+    <!-- =========================
+         Sidebar
+    ========================= -->
+
+    <aside class="sidebar">
+
+      <div class="sidebar-logo">
+
+        <img src="../../logo.jpeg" alt="صوتك" />
+
+        <h2>صوتك</h2>
+
+      </div>
+
+
+      <nav>
+
+        <a href="home.html" class="nav-item">
+
+          <span class="icon">⌂</span>
+
+          <span>الرئيسية</span>
+
+        </a>
+
+
+        <a href="problems.html" class="nav-item">
+
+          <span class="icon">▣</span>
+
+          <span>المشاكل التي أبلغت عنها</span>
+
+        </a>
+
+
+        <a href="faq.html" class="nav-item">
+
+          <span class="icon">?</span>
+
+          <span>الأسئلة الشائعة</span>
+
+        </a>
+
+      </nav>
+
+
+      <!-- Account -->
+
+      <div class="account">
+
+        <div class="account-icon">
+          👤
+        </div>
+
+        <div class="account-info">
+
+          <span>مرحبًا</span>
+
+          <strong>محمد أحمد</strong>
+
+        </div>
+
+      </div>
+
+
+      <!-- Logout -->
+
+      <a href="../login/login.html" class="logout">
+
+        <span>↩</span>
+
+        تسجيل الخروج
+
+      </a>
+
+    </aside>
+
+
+
+    <!-- =========================
+         Main
+    ========================= -->
+
+    <main class="main">
+
+
+      <!-- =========================
+           Top
+      ========================= -->
+
+      <div class="top">
+
+        <div>
+
+          <p class="small-title">
+            صوتك مهم
+          </p>
+
+          <h1>
+            الإبلاغ عن مشكلة
+          </h1>
+
+          <p class="top-text">
+            ساعدنا في معرفة المشكلة حتى نتمكن من التعامل معها.
+          </p>
+
+        </div>
+
+
+        <div class="profile">
+
+          <div class="profile-icon">
+            👤
+          </div>
+
+          <div>
+
+            <span>المستخدم</span>
+
+            <strong>محمد أحمد</strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!-- =========================
+           Report Form
+      ========================= -->
+
+      <section class="report-box">
+
+
+        <!-- Header -->
+
+        <div class="form-header">
+
+          <div class="form-icon">
+            +
+          </div>
+
+          <div>
+
+            <h2>
+              تفاصيل المشكلة
+            </h2>
+
+            <p>
+              اكتب لنا تفاصيل المشكلة بأكبر قدر ممكن من الوضوح.
+            </p>
+
+          </div>
+
+        </div>
+
+
+
+        <!-- Form -->
+
+        <form method="post">
+
+
+          <!-- =========================
+               Problem Type
+          ========================= -->
+
+          <div class="form-group">
+
+            <label for="type">
+              نوع المشكلة
+            </label>
+
+            <select id="type" name="type" required>
+
+              <option value="">
+                اختر نوع المشكلة
+              </option>
+
+              <option value="lighting">
+                إنارة الشوارع
+              </option>
+
+              <option value="garbage">
+                تراكم القمامة
+              </option>
+
+              <option value="roads">
+                مشاكل الطرق
+              </option>
+
+              <option value="water">
+                مشاكل المياه
+              </option>
+
+              <option value="traffic">
+                إشارات المرور
+              </option>
+
+              <option value="other">
+                مشكلة أخرى
+              </option>
+
+            </select>
+
+          </div>
+
+
+
+          <!-- =========================
+               Title
+          ========================= -->
+
+          <div class="form-group">
+
+            <label for="title">
+              عنوان المشكلة
+            </label>
+
+            <input
+              type="text"
+              id="title"
+              name="title"
+              placeholder="مثال: عطل في إنارة الشارع"
+              required
+            />
+
+          </div>
+
+
+
+          <!-- =========================
+               Description
+          ========================= -->
+
+          <div class="form-group">
+
+            <label for="description">
+              وصف المشكلة
+            </label>
+
+            <textarea
+              id="description"
+              name="description"
+              rows="6"
+              placeholder="اكتب تفاصيل المشكلة هنا..."
+              required
+            ></textarea>
+
+            <span class="hint">
+              حاول توضيح المشكلة ومتى بدأت وأي تفاصيل قد تساعد في حلها.
+            </span>
+
+          </div>
+
+
+
+          <!-- =========================
+               Location
+          ========================= -->
+
+          <div class="form-group">
+
+            <label for="location">
+              موقع المشكلة
+            </label>
+
+            <input
+              type="text"
+              id="location"
+              name="location"
+              placeholder="مثال: شارع النصر، الحي الشرقي"
+              required
+            />
+
+          </div>
+
+
+
+          <!-- =========================
+               Image
+          ========================= -->
+
+          <div class="form-group">
+
+            <label>
+              صورة المشكلة
+            </label>
+
+            <label for="image" class="upload-box">
+
+              <div class="upload-icon">
+                ↑
+              </div>
+
+              <div>
+
+                <strong>
+                  اضغط لاختيار صورة
+                </strong>
+
+                <span>
+                  يمكنك إضافة صورة توضح المشكلة
+                </span>
+
+              </div>
+
+            </label>
+
+            <input
+              type="file"
+              id="image"
+              name="image"
+              accept="image/*"
+              hidden
+              required
+            />
+
+          </div>
+
+
+
+          <!-- =========================
+               Notice
+          ========================= -->
+
+          <div class="notice">
+
+            <div class="notice-icon">
+              !
+            </div>
+
+            <p>
+              تأكد من أن البيانات التي أدخلتها صحيحة، وأن موقع المشكلة
+              ووصفها واضحان قبل إرسال البلاغ.
+            </p>
+
+          </div>
+
+
+
+          <!-- =========================
+               Buttons
+          ========================= -->
+
+          <div class="form-buttons">
+
+            <a href="problems.html" class="cancel-button">
+              إلغاء
+            </a>
+
+            
+                <button type="submit" class="submit-button" >
+              إرسال البلاغ</button>
+
+          </div>
+
+        </form>
+
+      </section>
+
+
+
+      <!-- =========================
+           Bottom Info
+      ========================= -->
+
+      <section class="info">
+
+        <div>
+
+          <h2>
+            صوتك يصنع فرقًا
+          </h2>
+
+          <p>
+            عندما تبلغ عن مشكلة، أنت تساعد في تحسين الخدمات وجعل
+            المجتمع مكانًا أفضل للجميع.
+          </p>
+
+        </div>
+
+        <div class="info-number">
+          صوتك
+        </div>
+
+      </section>
+
+    </main>
+
+  </body>
+</html>
