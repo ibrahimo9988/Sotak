@@ -1,0 +1,661 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    color: #17202a;
+    background-color: white;
+}
+
+
+/* =========================
+   Navbar
+========================= */
+
+nav {
+    height: 80px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 0 8%;
+
+    border-bottom: 1px solid #eeeeee;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    transition: 0.3s;
+}
+
+.logo img {
+    width: 48px;
+    height: 48px;
+
+    border-radius: 50%;
+}
+
+.logo span {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo:hover {
+    transform: scale(1.03);
+}
+
+
+.links {
+    display: flex;
+    gap: 30px;
+}
+
+.links a {
+    text-decoration: none;
+    color: #333;
+
+    transition: 0.3s;
+}
+
+.links a:hover {
+    color: #38bdf8;
+}
+
+
+/* =========================
+   General
+========================= */
+
+.small-title {
+    color: #38bdf8;
+
+    font-size: 14px;
+    font-weight: bold;
+
+    margin-bottom: 18px;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 13px 25px;
+
+    background-color: #38bdf8;
+    color: white;
+
+    text-decoration: none;
+
+    border-radius: 7px;
+
+    transition: 0.3s;
+}
+
+.button:hover {
+    background-color: #0ea5e9;
+
+    transform: translateY(-3px);
+}
+
+
+/* =========================
+   Hero
+========================= */
+
+.hero {
+    min-height: 600px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 70px 10%;
+}
+
+.hero-text {
+    width: 55%;
+}
+
+.hero h1 {
+    font-size: 60px;
+    line-height: 1.2;
+
+    margin-bottom: 25px;
+}
+
+.description {
+    width: 600px;
+    max-width: 100%;
+
+    font-size: 18px;
+    line-height: 2;
+
+    color: #666;
+
+    margin-bottom: 30px;
+}
+
+
+.hero-logo {
+    width: 40%;
+
+    display: flex;
+    justify-content: center;
+}
+
+.hero-logo img {
+    width: 300px;
+    height: 300px;
+
+    border-radius: 50%;
+
+    transition: 0.4s;
+}
+
+.hero-logo img:hover {
+    transform: scale(1.04);
+}
+
+
+/* =========================
+   About
+========================= */
+
+.about {
+    text-align: center;
+
+    padding: 110px 20%;
+
+    background-color: #f7f9fb;
+}
+
+.about h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.about p:not(.small-title) {
+    font-size: 18px;
+    line-height: 2;
+
+    color: #666;
+
+    margin-bottom: 15px;
+}
+
+
+/* =========================
+   Idea
+========================= */
+
+.idea {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 110px 12%;
+}
+
+.idea-text {
+    width: 60%;
+}
+
+.idea h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.idea-text p:not(.small-title) {
+    color: #666;
+
+    line-height: 2;
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+
+.idea-number {
+    width: 220px;
+
+    display: grid;
+
+    grid-template-columns: 60px 1fr;
+
+    gap: 18px;
+
+    align-items: center;
+}
+
+.idea-number span {
+    font-size: 25px;
+    font-weight: bold;
+
+    color: #38bdf8;
+}
+
+.idea-number p {
+    color: #555;
+}
+
+
+/* =========================
+   Goals
+========================= */
+
+.goals {
+    padding: 100px 10%;
+
+    background-color: #f7f9fb;
+}
+
+.goals h2 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+
+.goal-container {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 20px;
+}
+
+
+.goal {
+    background-color: white;
+
+    padding: 30px;
+
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.goal:hover {
+    transform: translateY(-5px);
+}
+
+
+.number {
+    color: #38bdf8;
+
+    font-size: 25px;
+    font-weight: bold;
+
+    margin-bottom: 25px;
+}
+
+.goal h3 {
+    margin-bottom: 15px;
+}
+
+.goal p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   How It Works
+========================= */
+
+.how {
+    padding: 110px 10%;
+}
+
+.how h2 {
+    font-size: 40px;
+
+    margin-bottom: 50px;
+}
+
+
+.steps {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 25px;
+}
+
+
+.step {
+    padding: 25px;
+
+    border-right: 2px solid #38bdf8;
+
+    transition: 0.3s;
+}
+
+.step:hover {
+    transform: translateX(-5px);
+}
+
+
+.step span {
+    font-size: 30px;
+    font-weight: bold;
+
+    color: #38bdf8;
+}
+
+.step h3 {
+    margin: 20px 0 12px;
+}
+
+.step p {
+    color: #666;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   Services
+========================= */
+
+.services {
+    padding: 100px 10%;
+
+    background-color: #f7f9fb;
+}
+
+.services h2 {
+    font-size: 40px;
+
+    margin-bottom: 15px;
+}
+
+.services-text {
+    color: #666;
+
+    line-height: 1.8;
+
+    margin-bottom: 45px;
+}
+
+
+.service-box {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 45px;
+
+    background-color: white;
+
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+.service-box:hover {
+    transform: translateY(-4px);
+}
+
+
+.service-box h3 {
+    font-size: 35px;
+
+    margin-bottom: 15px;
+}
+
+.service-box p:not(.small-title) {
+    color: #666;
+
+    line-height: 2;
+
+    max-width: 650px;
+}
+
+
+.service-box a {
+    text-decoration: none;
+
+    background-color: #38bdf8;
+
+    color: white;
+
+    padding: 13px 25px;
+
+    border-radius: 7px;
+
+    white-space: nowrap;
+
+    transition: 0.3s;
+}
+
+.service-box a:hover {
+    background-color: #0ea5e9;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   Sawtak
+========================= */
+
+.sawtak {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 110px 12%;
+}
+
+.sawtak div:first-child {
+    width: 65%;
+}
+
+
+.sawtak h2 {
+    font-size: 60px;
+
+    margin-bottom: 10px;
+}
+
+.sawtak h3 {
+    font-size: 25px;
+
+    margin-bottom: 20px;
+}
+
+
+.sawtak p:not(.small-title) {
+    color: #666;
+
+    line-height: 2;
+
+    font-size: 18px;
+
+    margin-bottom: 30px;
+}
+
+
+.sawtak-logo img {
+    width: 200px;
+    height: 200px;
+
+    border-radius: 50%;
+
+    transition: 0.4s;
+}
+
+.sawtak-logo img:hover {
+    transform: scale(1.05);
+}
+
+
+/* =========================
+   Future
+========================= */
+
+.future {
+    text-align: center;
+
+    padding: 100px 20%;
+
+    background-color: #f7f9fb;
+}
+
+.future h2 {
+    font-size: 40px;
+
+    margin-bottom: 25px;
+}
+
+.future p:not(.small-title) {
+    color: #666;
+
+    line-height: 2;
+
+    font-size: 18px;
+}
+
+/* =========================
+   Footer
+========================= */
+
+footer {
+    background-color: #17202a;
+
+    color: white;
+
+    padding: 65px 10% 0;
+}
+
+
+.footer-content {
+    display: grid;
+
+    grid-template-columns: 1.5fr 1fr 1.5fr;
+
+    gap: 70px;
+
+    padding-bottom: 50px;
+}
+
+
+/* Footer Logo */
+
+.footer-logo img {
+    width: 55px;
+    height: 55px;
+
+    border-radius: 50%;
+
+    margin-bottom: 15px;
+}
+
+.footer-logo h3 {
+    font-size: 25px;
+
+    margin-bottom: 10px;
+}
+
+.footer-logo p {
+    color: #aeb7c0;
+
+    line-height: 1.8;
+}
+
+
+/* Footer Links */
+
+.footer-links h4 {
+    font-size: 18px;
+
+    margin-bottom: 20px;
+}
+
+.footer-links a {
+    display: block;
+
+    width: fit-content;
+
+    color: #aeb7c0;
+
+    text-decoration: none;
+
+    margin-bottom: 12px;
+
+    transition: 0.3s;
+}
+
+.footer-links a:hover {
+    color: #38bdf8;
+
+    transform: translateX(-4px);
+}
+
+
+/* Footer Service */
+
+.footer-service h4 {
+    font-size: 18px;
+
+    margin-bottom: 15px;
+}
+
+.footer-service p {
+    color: #aeb7c0;
+
+    line-height: 1.8;
+
+    max-width: 350px;
+
+    margin-bottom: 20px;
+}
+
+.footer-service a {
+    display: inline-block;
+
+    color: #38bdf8;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+.footer-service a:hover {
+    color: white;
+
+    transform: translateX(-4px);
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #303b45;
+
+    padding: 20px 0;
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #7f8a94;
+
+    font-size: 14px;
+}
