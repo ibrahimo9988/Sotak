@@ -1,0 +1,347 @@
+<!doctype html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="icon" href="../../logo.jpeg" />
+
+    <title>لوحة التحكم | صوتك</title>
+
+    <link rel="stylesheet" href="admin-home.css" />
+  </head>
+
+  <body>
+    <!-- =========================
+         Sidebar
+    ========================= -->
+
+    <aside class="sidebar">
+      <!-- Logo -->
+
+      <div class="sidebar-logo">
+        <img src="../../logo.jpeg" alt="صوتك" />
+
+        <h2>صوتك</h2>
+      </div>
+
+      <!-- Navigation -->
+
+      <nav>
+        <!-- Home -->
+
+        <a href="admin-home.html" class="nav-item active">
+          <span class="icon">⌂</span>
+
+          <span>الرئيسية</span>
+        </a>
+
+        <!-- Reports -->
+
+        <a href="admin-problems.html" class="nav-item">
+          <span class="icon">▣</span>
+
+          <span>جميع البلاغات</span>
+        </a>
+
+        <!-- Users -->
+
+        <a href="users.html" class="nav-item">
+          <span class="icon">👥</span>
+
+          <span>المستخدمون</span>
+        </a>
+
+        <!-- FAQ -->
+
+        <a href="faq.html" class="nav-item">
+          <span class="icon">?</span>
+
+          <span>الأسئلة الشائعة</span>
+        </a>
+
+        <!-- AI -->
+
+        <div class="ai-item">
+          <div class="ai-link">
+            <span class="icon">🤖</span>
+
+            <span>الذكاء الاصطناعي</span>
+          </div>
+
+          <span class="coming-soon"> متاح قريبًا </span>
+        </div>
+      </nav>
+
+      <!-- Account -->
+
+      <div class="account">
+        <div class="account-icon">👤</div>
+
+        <div class="account-info">
+          <span>مسؤول النظام</span>
+
+          <strong>معاذ أحمد</strong>
+        </div>
+      </div>
+
+      <!-- Logout -->
+
+      <a href="../login/login.html" class="logout">
+        <span>↩</span>
+
+        تسجيل الخروج
+      </a>
+    </aside>
+
+    <!-- =========================
+         Main
+    ========================= -->
+
+    <main class="main">
+      <!-- =========================
+           Top
+      ========================= -->
+
+      <div class="top">
+        <div>
+          <p class="small-title">لوحة التحكم</p>
+
+          <h1>أهلاً بك، معاذ 👋</h1>
+
+          <p class="top-text">
+            إليك ملخص سريع عن البلاغات والنشاط على منصة صوتك.
+          </p>
+        </div>
+
+        <!-- Profile -->
+
+        <div class="profile">
+          <div class="profile-icon">👤</div>
+
+          <div>
+            <span>مسؤول النظام</span>
+
+            <strong>معاذ أحمد</strong>
+          </div>
+        </div>
+      </div>
+
+      <!-- =========================
+           Statistics
+      ========================= -->
+
+      <section class="statistics">
+        <!-- Total -->
+
+        <div class="stat-card">
+          <div class="stat-icon">#</div>
+
+          <div>
+            <span>إجمالي البلاغات</span>
+
+            <strong>128</strong>
+          </div>
+        </div>
+
+        <!-- Pending -->
+
+        <div class="stat-card">
+          <div class="stat-icon yellow">!</div>
+
+          <div>
+            <span>قيد المراجعة</span>
+
+            <strong>24</strong>
+          </div>
+        </div>
+
+        <!-- Progress -->
+
+        <div class="stat-card">
+          <div class="stat-icon blue">↻</div>
+
+          <div>
+            <span>جاري الحل</span>
+
+            <strong>37</strong>
+          </div>
+        </div>
+
+        <!-- Solved -->
+
+        <div class="stat-card">
+          <div class="stat-icon green">✓</div>
+
+          <div>
+            <span>تم الحل</span>
+
+            <strong>67</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           Recent Reports
+      ========================= -->
+
+      <section class="latest">
+        <!-- Header -->
+
+        <div class="latest-header">
+          <div>
+            <p class="small-title">آخر البلاغات</p>
+
+            <h2>أحدث ما تم الإبلاغ عنه</h2>
+          </div>
+
+          <a href="admin-problems.html" class="view-all"> عرض كل البلاغات ← </a>
+        </div>
+
+        <!-- Reports -->
+
+        <div class="reports">
+          <!-- Report 1 -->
+
+          <div class="report-card">
+            <img
+              src="https://www.emaratalyoum.com/polopoly_fs/1.1635523.1653823218!/image/image.jpeg"
+              alt="مشكلة في إنارة الشارع"
+            />
+
+            <div class="report-content">
+              <div class="report-top">
+                <div>
+                  <span> البلاغ #1024 </span>
+
+                  <h3>مشكلة في إنارة الشارع</h3>
+                </div>
+
+                <span class="status pending"> قيد المراجعة </span>
+              </div>
+
+              <p>
+                يوجد عطل في أحد أعمدة الإنارة بالشارع مما يسبب ضعف الرؤية ليلًا.
+              </p>
+
+              <div class="report-bottom">
+                <span> 📍 شارع النصر </span>
+
+                <span> 👤 محمد أحمد </span>
+
+                <span> منذ ساعتين </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Report 2 -->
+
+          <div class="report-card">
+            <img
+              src="https://img.youm7.com/large/202009130538333833.jpg"
+              alt="تراكم القمامة"
+            />
+
+            <div class="report-content">
+              <div class="report-top">
+                <div>
+                  <span> البلاغ #1023 </span>
+
+                  <h3>تراكم القمامة</h3>
+                </div>
+
+                <span class="status progress"> جاري الحل </span>
+              </div>
+
+              <p>
+                توجد كمية كبيرة من القمامة بجوار المنطقة السكنية ولم يتم رفعها
+                منذ عدة أيام.
+              </p>
+
+              <div class="report-bottom">
+                <span> 📍 الحي الشرقي </span>
+
+                <span> 👤 أحمد علي </span>
+
+                <span> منذ يوم </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Report 3 -->
+
+          <div class="report-card">
+            <img
+              src="https://imgsrv2.voi.id/orIQ3MpItJHQCqlCAAl8uU-81kwC1PEriBQHq-sUJdM/auto/1200/675/sm/1/bG9jYWw6Ly8vcHVibGlzaGVycy8xODYyNTcvMjAyMjA3MDQxNjA5LW1haW4uY3JvcHBlZF8xNjU2OTI1NzU2LmpwZw.jpg"
+              alt="مشكلة في الطريق"
+            />
+
+            <div class="report-content">
+              <div class="report-top">
+                <div>
+                  <span> البلاغ #1022 </span>
+
+                  <h3>مشكلة في الطريق</h3>
+                </div>
+
+                <span class="status solved"> تم الحل </span>
+              </div>
+
+              <p>
+                وجود حفرة كبيرة في الطريق كانت تسبب صعوبة في مرور السيارات
+                والمشاة.
+              </p>
+
+              <div class="report-bottom">
+                <span> 📍 شارع الجمهورية </span>
+
+                <span> 👤 سارة محمد </span>
+
+                <span> منذ 3 أيام </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================
+           AI Coming Soon
+      ========================= -->
+
+      <section class="ai-box">
+        <div class="ai-box-icon">🤖</div>
+
+        <div class="ai-box-content">
+          <span class="ai-label"> ميزة جديدة </span>
+
+          <h2>الذكاء الاصطناعي قادم إلى صوتك</h2>
+
+          <p>
+            قريبًا سيساعد الذكاء الاصطناعي في تحليل البلاغات، تصنيف المشكلات،
+            وترشيح الجهة المختصة للتعامل معها.
+          </p>
+        </div>
+
+        <span class="ai-badge"> متاح قريبًا </span>
+      </section>
+
+      <!-- =========================
+           Info
+      ========================= -->
+
+      <section class="info">
+        <div>
+          <h2>إدارة أفضل، مجتمع أفضل</h2>
+
+          <p>
+            من خلال متابعة البلاغات والتعامل معها بشكل أسرع، نساعد في تحسين
+            الخدمات والاستجابة لمشكلات المواطنين.
+          </p>
+        </div>
+
+        <div class="info-number">صوتك</div>
+      </section>
+    </main>
+  </body>
+</html>
